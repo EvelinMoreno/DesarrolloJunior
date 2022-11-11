@@ -40,7 +40,14 @@ public class Empleado {
     }
 
     public void setCargo(String cargo) {
-        this.cargo = cargo;
+        if (cargo.equals("senior")) {
+            this.cargo = cargo;
+        } else if (cargo.equals("junior")) {
+            this.cargo = cargo;
+        }else {
+            System.out.println("Cargo invalido");
+        }
+
     }
 
     public double getSalario() {
@@ -48,6 +55,11 @@ public class Empleado {
     }
 
     public void setSalario(double salario) {
-        this.salario = salario;
+        if (salario <= 0 ) {
+            System.out.println("Ingresa un salario Valido");
+        }else{
+            this.salario = salario;
+        }
+
     }
 }

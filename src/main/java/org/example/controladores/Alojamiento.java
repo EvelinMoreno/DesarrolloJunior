@@ -24,7 +24,11 @@ public class Alojamiento {
     }
 
     public void setValorAlojamiento(double valorAlojamiento) {
-        this.valorAlojamiento = valorAlojamiento;
+        if (valorAlojamiento <= 0) {
+            System.out.println("Ingrese un valor valido");
+        }else {
+            this.valorAlojamiento = valorAlojamiento;
+        }
     }
 
     public int getNochesAlojamiento() {
