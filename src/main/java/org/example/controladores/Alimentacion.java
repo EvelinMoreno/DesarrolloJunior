@@ -13,7 +13,12 @@ public class Alimentacion {
     }
 
     public void setCantidadComidas(int cantidadComidas) {
-        this.cantidadComidas = cantidadComidas;
+        if (cantidadComidas < 0) {
+            System.out.println("ingrese una cantidad valida");
+        }else {
+            this.cantidadComidas = cantidadComidas;
+        }
+
     }
 
     public double getValorComidas() {
@@ -21,6 +26,10 @@ public class Alimentacion {
     }
 
     public void setValorComidas(double valorComidas) {
-        this.valorComidas = valorComidas;
+        if (valorComidas < 0) {
+            System.out.println("ingrese un valor de comidas valido");
+        }else {
+            this.valorComidas = valorComidas;
+        }
     }
 }

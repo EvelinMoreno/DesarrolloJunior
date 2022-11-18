@@ -55,7 +55,7 @@ public class Empleado {
     }
 
     public void setSalario(double salario) {
-        if (salario <= 0 ) {
+        if (salario < 0 ) {
             System.out.println("Ingresa un salario Valido");
         }else{
             this.salario = salario;

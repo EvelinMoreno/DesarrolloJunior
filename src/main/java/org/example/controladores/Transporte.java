@@ -22,7 +22,12 @@ public class Transporte {
     }
 
     public void setCostoTrasporte(double costoTrasporte) {
-        this.costoTrasporte = costoTrasporte;
+
+        if (costoTrasporte < 0) {
+            System.out.println("Ingrese un valor valido");
+        }else {
+            this.costoTrasporte = costoTrasporte;
+        }
     }
 
     public String getFechaTrasporte() {

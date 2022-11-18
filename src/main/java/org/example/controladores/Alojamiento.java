@@ -24,7 +24,7 @@ public class Alojamiento {
     }
 
     public void setValorAlojamiento(double valorAlojamiento) {
-        if (valorAlojamiento <= 0) {
+        if (valorAlojamiento < 0) {
             System.out.println("Ingrese un valor valido");
         }else {
             this.valorAlojamiento = valorAlojamiento;
