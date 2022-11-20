@@ -14,7 +14,7 @@ public class Alimentacion {
 
     public void setCantidadComidas(int cantidadComidas) {
         if (cantidadComidas < 0) {
-            System.out.println("ingrese una cantidad valida");
+            System.out.println("ingrese un numero valido de comidas");
         }else {
             this.cantidadComidas = cantidadComidas;
         }
