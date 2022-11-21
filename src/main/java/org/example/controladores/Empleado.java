@@ -5,6 +5,7 @@ public class Empleado {
     private String id;
     private String nombre;
     private String apellido;
+    private int edad;
     private String cargo;
     private double salario;
 
@@ -56,7 +57,7 @@ public class Empleado {
 
     public void setSalario(double salario) {
         if (salario < 0 ) {
-            System.out.println("Ingresa un salario Valido");
+            System.out.println("Ingresa una cantidad de salario valida");
         }else{
             this.salario = salario;
         }

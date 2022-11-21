@@ -25,7 +25,7 @@ public class Alojamiento {
 
     public void setValorAlojamiento(double valorAlojamiento) {
         if (valorAlojamiento < 0) {
-            System.out.println("Ingrese un valor valido");
+            System.out.println("Ingrese un valor de alojamiento valido");
         }else {
             this.valorAlojamiento = valorAlojamiento;
         }
@@ -36,7 +36,11 @@ public class Alojamiento {
     }
 
     public void setNochesAlojamiento(int nochesAlojamiento) {
-        this.nochesAlojamiento = nochesAlojamiento;
+        if (nochesAlojamiento<0){
+            System.out.println("Ingrese un numero de noches valido");
+        } else{
+            this.nochesAlojamiento = nochesAlojamiento;
+        }
     }
 
     public String getFechaInicio() {

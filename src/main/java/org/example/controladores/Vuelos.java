@@ -33,7 +33,7 @@ public class Vuelos {
 
     public void setValorVuelo(double valorVuelo) {
         if (valorVuelo < 0) {
-            System.out.println("ingrese un valor valido");
+            System.out.println("ingrese un valor de vuelo valido");
         }else {
             this.valorVuelo = valorVuelo;
         }
