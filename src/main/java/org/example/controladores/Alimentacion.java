@@ -38,7 +38,7 @@ public class Alimentacion {
     }
 
     public void setValorComidas(double valorComidas) {
-        if (valorComidas < 0) {
+        if (valorComidas <=0) {
             System.out.println("ingrese un valor de comidas valido");
         }else {
             this.valorComidas = valorComidas;
