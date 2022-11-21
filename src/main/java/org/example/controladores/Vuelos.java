@@ -3,7 +3,10 @@ package org.example.controladores;
 public class Vuelos {
 
     private String tipoVuelo;
-    private String fechaVuelo;
+
+    private String fechaDeSalida;
+
+    private String fechaDeLlegada;
     private double valorVuelo;
     private String destino;
     private String origen;
@@ -20,11 +23,11 @@ public class Vuelos {
     }
 
     public String getFechaVuelo() {
-        return fechaVuelo;
+        return fechaDeSalida;
     }
 
     public void setFechaVuelo(String fechaVuelo) {
-        this.fechaVuelo = fechaVuelo;
+        this.fechaDeSalida = fechaVuelo;
     }
 
     public double getValorVuelo() {

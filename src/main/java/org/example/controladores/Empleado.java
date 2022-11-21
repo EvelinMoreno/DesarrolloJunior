@@ -36,6 +36,22 @@ public class Empleado {
         this.apellido = apellido;
     }
 
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) { if (edad<18){
+        System.out.println("Ingrese una edad valida");
+    }
+    else if (edad>110) {
+        System.out.println("Edad invalida");
+    }
+        else {
+        this.edad = edad;
+    }
+
+    }
+
     public String getCargo() {
         return cargo;
     }

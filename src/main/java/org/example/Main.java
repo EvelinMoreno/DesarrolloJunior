@@ -34,22 +34,52 @@ public class Main {
 
             switch(seleccion){
                 case 1:
-
+                    System.out.println("Ingrese la fecha de comida");
+                    objetoAlimentacion.setFechaDeComida(read.next());
+                    System.out.println("Ingrese la cantidad de comidas");
+                    objetoAlimentacion.setCantidadComidas(read.nextInt());
+                    System.out.println("Ingrese el valor de las comidas");
+                    objetoAlimentacion.setValorComidas(read.nextDouble());
                     break;
                 case 2:
 
+                    System.out.println("Ingrese el tipo de alojamiento");
+                    objetoAlojamiento.setTipoAlojamiento(read.next());
+                    System.out.println("Ingrese fecha de inicio de alojamiento: ");
+                    objetoAlojamiento.setFechaInicio(read.next());
+                    System.out.println("Ingrese fecha de salida de alojamiento:");
+                    objetoAlojamiento.setFechaFinal(read.next());
+                    System.out.println("Ingrese numero de noches de alojamiento:");
+                    objetoAlojamiento.setNochesAlojamiento(read.nextInt());
+                    System.out.println("Ingrese el valor del alojamiento: ");
+                    objetoAlojamiento.setValorAlojamiento(read.nextDouble());
+
                     break;
                 case 3:
-
+                    System.out.println("Ingrese identificacion");
+                    System.out.println("Ingrese nombre del empleado");
+                    System.out.println("Ingrese el apellido del empleado");
+                    System.out.println("Ingrese la edad del empleado");
+                    System.out.println("Ingrese el cargo del empleadò");
+                    System.out.println("Ingrese el salario del empleado");
                     break;
                 case 4:
-
+                    System.out.println("Ingrese el tipo de transporte");
+                    System.out.println("Ingrese la fecha de inicio del transporte");
+                    System.out.println("Ingrese la fecha final del transporte");
+                    System.out.println("Ingrese el costo del transporte");
                     break;
                 case 5:
-
+                    System.out.println("Ingrese el tipo de vuelo");
+                    System.out.println("Ingrese el origen del vuelo");
+                    System.out.println("Ingrese el destino del vuelo");
+                    System.out.println("Ingrese la fecha de salida del vuelo");
+                    System.out.println("Ingrese la fecha de llegada del vuelo");
+                    System.out.println("Ingrese el valor del vuelo");
                     break;
                 case 6:
-
+                    System.out.println("");
+                    System.out.println("");
                     break;
                 default:
                     System.out.println("Selecciona una opción valida");
