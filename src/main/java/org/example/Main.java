@@ -46,9 +46,9 @@ public class Main {
                     System.out.println("Ingrese el tipo de alojamiento");
                     objetoAlojamiento.setTipoAlojamiento(read.next());
                     System.out.println("Ingrese fecha de inicio de alojamiento: ");
-                    objetoAlojamiento.setFechaInicio(read.next());
+                    objetoAlojamiento.setFechaInicioAlojamiento(read.next());
                     System.out.println("Ingrese fecha de salida de alojamiento:");
-                    objetoAlojamiento.setFechaFinal(read.next());
+                    objetoAlojamiento.setFechaFinalAlojamiento(read.next());
                     System.out.println("Ingrese numero de noches de alojamiento:");
                     objetoAlojamiento.setNochesAlojamiento(read.nextInt());
                     System.out.println("Ingrese el valor del alojamiento: ");
@@ -57,25 +57,41 @@ public class Main {
                     break;
                 case 3:
                     System.out.println("Ingrese identificacion");
+                    objetoEmpleado.setId(read.next());
                     System.out.println("Ingrese nombre del empleado");
+                    objetoEmpleado.setNombre(read.next());
                     System.out.println("Ingrese el apellido del empleado");
+                    objetoEmpleado.setApellido(read.next());
                     System.out.println("Ingrese la edad del empleado");
+                    objetoEmpleado.setEdad(read.nextInt());
                     System.out.println("Ingrese el cargo del empleadò");
+                    objetoEmpleado.setCargo(read.next());
                     System.out.println("Ingrese el salario del empleado");
+                    objetoEmpleado.setSalario(read.nextDouble());
                     break;
                 case 4:
                     System.out.println("Ingrese el tipo de transporte");
+                    objetoTransporte.setTipoTransporte(read.next());
                     System.out.println("Ingrese la fecha de inicio del transporte");
+                    objetoTransporte.setFechaInicioTrasporte(read.next());
                     System.out.println("Ingrese la fecha final del transporte");
+                    objetoTransporte.setFechaFinDeTrasporte(read.next());
                     System.out.println("Ingrese el costo del transporte");
+                    objetoTransporte.setCostoTrasporte(read.nextDouble());
                     break;
                 case 5:
                     System.out.println("Ingrese el tipo de vuelo");
+                    objetoVuelos.setTipoVuelo(read.next());
                     System.out.println("Ingrese el origen del vuelo");
+                    objetoVuelos.setOrigen(read.next());
                     System.out.println("Ingrese el destino del vuelo");
+                    objetoVuelos.setDestino(read.next());
                     System.out.println("Ingrese la fecha de salida del vuelo");
+                    objetoVuelos.setFechaDeSalida(read.next());
                     System.out.println("Ingrese la fecha de llegada del vuelo");
+                    objetoVuelos.setFechaDeLlegada(read.next());
                     System.out.println("Ingrese el valor del vuelo");
+                    objetoVuelos.setValorVuelo(read.nextDouble());
                     break;
                 case 6:
                     System.out.println("");
