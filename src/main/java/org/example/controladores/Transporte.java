@@ -4,8 +4,8 @@ public class Transporte {
 
     private String tipoTransporte;
     private double costoTrasporte;
-    private String fechaTrasporte;
-
+    private String fechaInicioTrasporte;
+    private String fechaFinDeTrasporte;
     public Transporte() {
     }
 
@@ -30,11 +30,19 @@ public class Transporte {
         }
     }
 
-    public String getFechaTrasporte() {
-        return fechaTrasporte;
+    public String getFechaInicioTrasporte() {
+        return fechaInicioTrasporte;
     }
 
-    public void setFechaTrasporte(String fechaTrasporte) {
-        this.fechaTrasporte = fechaTrasporte;
+    public void setFechaInicioTrasporte(String fechaInicioTrasporte) {
+        this.fechaInicioTrasporte = fechaInicioTrasporte;
+    }
+
+    public String getFechaFinDeTrasporte() {
+        return fechaFinDeTrasporte;
+    }
+
+    public void setFechaFinDeTrasporte(String fechaFinDeTrasporte) {
+        this.fechaFinDeTrasporte = fechaFinDeTrasporte;
     }
 }
