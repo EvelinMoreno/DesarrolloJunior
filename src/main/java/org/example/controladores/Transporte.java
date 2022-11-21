@@ -24,7 +24,7 @@ public class Transporte {
     public void setCostoTrasporte(double costoTrasporte) {
 
         if (costoTrasporte < 0) {
-            System.out.println("Ingrese un valor valido");
+            System.out.println("Ingrese un valor de transporte valido");
         }else {
             this.costoTrasporte = costoTrasporte;
         }
