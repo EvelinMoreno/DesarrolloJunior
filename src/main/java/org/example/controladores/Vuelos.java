@@ -22,12 +22,20 @@ public class Vuelos {
         this.tipoVuelo = tipoVuelo;
     }
 
-    public String getFechaVuelo() {
+    public String getFechaDeSalida() {
         return fechaDeSalida;
     }
 
-    public void setFechaVuelo(String fechaVuelo) {
+    public void setFechaDeSalida(String fechaVuelo) {
         this.fechaDeSalida = fechaVuelo;
+    }
+
+    public String getFechaDeLlegada() {
+        return fechaDeLlegada;
+    }
+
+    public void setFechaDeLlegada(String fechaDeLlegada) {
+        this.fechaDeLlegada = fechaDeLlegada;
     }
 
     public double getValorVuelo() {

@@ -46,9 +46,9 @@ public class Main {
                     System.out.println("Ingrese el tipo de alojamiento");
                     objetoAlojamiento.setTipoAlojamiento(read.next());
                     System.out.println("Ingrese fecha de inicio de alojamiento: ");
-                    objetoAlojamiento.setFechaInicio(read.next());
+                    objetoAlojamiento.setFechaInicioAlojamiento(read.next());
                     System.out.println("Ingrese fecha de salida de alojamiento:");
-                    objetoAlojamiento.setFechaFinal(read.next());
+                    objetoAlojamiento.setFechaFinalAlojamiento(read.next());
                     System.out.println("Ingrese numero de noches de alojamiento:");
                     objetoAlojamiento.setNochesAlojamiento(read.nextInt());
                     System.out.println("Ingrese el valor del alojamiento: ");
@@ -91,15 +91,15 @@ public class Main {
                     System.out.println("Ingrese el destino del vuelo");
                     objetoVuelos.setDestino(read.next());
                     System.out.println("Ingrese la fecha de salida del vuelo");
-                    objetoVuelos.setFechaVuelo(read.next());
+                    objetoVuelos.setFechaDeSalida(read.next());
                     System.out.println("Ingrese el valor del vuelo");
                     objetoVuelos.setValorVuelo(read.nextInt());
                     break;
                 case 6:
-                 for (Empleado empleado:empleados){
-                     System.out.println(empleado.getNombre());
+                    for (Empleado empleado:empleados){
+                        System.out.println(empleado.getNombre());
 
-                 }
+                    }
                     break;
                 default:
                     System.out.println("Selecciona una opción valida");
@@ -110,4 +110,5 @@ public class Main {
         while (seleccion != 0);
 
 
-    }}
+    }
+}

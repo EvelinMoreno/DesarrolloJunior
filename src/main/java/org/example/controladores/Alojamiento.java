@@ -5,8 +5,8 @@ public class Alojamiento {
     private String tipoAlojamiento;
     private double valorAlojamiento;
     private int nochesAlojamiento;
-    private String fechaInicio;
-    private String fechaFinal;
+    private String fechaInicioAlojamiento;
+    private String fechaFinalAlojamiento;
 
     public Alojamiento() {
     }
@@ -43,19 +43,19 @@ public class Alojamiento {
         }
     }
 
-    public String getFechaInicio() {
-        return fechaInicio;
+    public String getFechaInicioAlojamiento() {
+        return fechaInicioAlojamiento;
     }
 
-    public void setFechaInicio(String fechaInicio) {
-        this.fechaInicio = fechaInicio;
+    public void setFechaInicioAlojamiento(String fechaInicioAlojamiento) {
+        this.fechaInicioAlojamiento = fechaInicioAlojamiento;
     }
 
     public String getFechaFinal() {
-        return fechaFinal;
+        return fechaFinalAlojamiento;
     }
 
-    public void setFechaFinal(String fechaFinal) {
-        this.fechaFinal = fechaFinal;
+    public void setFechaFinalAlojamiento(String fechaFinalAlojamiento) {
+        this.fechaFinalAlojamiento = fechaFinalAlojamiento;
     }
 }
