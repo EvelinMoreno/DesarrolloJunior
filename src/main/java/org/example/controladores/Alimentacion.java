@@ -1,5 +1,7 @@
 package org.example.controladores;
 
+import java.util.Scanner;
+
 public class Alimentacion {
 
     private String fechaDeComida;
@@ -43,5 +45,15 @@ public class Alimentacion {
         }else {
             this.valorComidas = valorComidas;
         }
+    }
+    public void agregarComidas(){
+        Scanner read= new Scanner(System.in);
+        System.out.println("Ingrese la fecha de comida: ");
+        this.setFechaDeComida(read.next());
+        System.out.println("Ingrese la cantidad de comidas: ");
+        this.setCantidadComidas(read.nextInt());
+        System.out.println("Ingrese el valor de las comidas: ");
+        this.setValorComidas(read.nextDouble());
+
     }
 }

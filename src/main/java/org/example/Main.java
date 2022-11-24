@@ -14,7 +14,10 @@ public class Main {
         Alojamiento objetoAlojamiento = new Alojamiento();
         Transporte objetoTransporte = new Transporte();
         Vuelos objetoVuelos = new Vuelos();
+<<<<<<< HEAD
 
+=======
+>>>>>>> 55314465049984cfb7955ed046f7b39066f8158a
 
         ArrayList<Empleado> empleados = new ArrayList<Empleado>();
 
@@ -29,11 +32,12 @@ public class Main {
         System.out.println("6. Mostrar Empleados");
 
         do {
-            System.out.println(" Ingrese opción del menu");
+            System.out.println(" Ingrese opción del menu: ");
             seleccion = read.nextInt();
 
             switch(seleccion){
                 case 1:
+<<<<<<< HEAD
                     System.out.println("Ingrese la fecha de comida");
                     objetoAlimentacion.setFechaDeComida(read.next());
                     System.out.println("Ingrese la cantidad de comidas");
@@ -100,6 +104,39 @@ public class Main {
                         System.out.println(empleado.getNombre() +"  "+ empleado.getApellido());
 
                     }
+=======
+
+                    objetoAlimentacion.agregarComidas();
+
+                case 2:
+
+                    objetoAlojamiento.agregarAlojamiento();
+
+                    break;
+                case 3:
+
+                    objetoTransporte.agregarTransporte();
+
+                    break;
+                case 4:
+
+                    objetoVuelos.agregarVuelo();
+
+                    break;
+                case 5:
+
+                    Empleado objetoEmpleado = new Empleado();
+                    objetoEmpleado.agregarEmpleado();
+                    empleados.add(objetoEmpleado);
+                    break;
+                case 6:
+
+                    for (Empleado empleado:empleados) {
+                        System.out.println(empleado.getNombre()+empleado.getApellido()+empleado.getCargo()
+                                +empleado.getSalario());
+                    }
+
+>>>>>>> 55314465049984cfb7955ed046f7b39066f8158a
                     break;
                 default:
                     System.out.println("Selecciona una opción valida");
