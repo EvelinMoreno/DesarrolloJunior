@@ -14,10 +14,7 @@ public class Main {
         Alojamiento objetoAlojamiento = new Alojamiento();
         Transporte objetoTransporte = new Transporte();
         Vuelos objetoVuelos = new Vuelos();
-<<<<<<< HEAD
 
-=======
->>>>>>> 55314465049984cfb7955ed046f7b39066f8158a
 
         ArrayList<Empleado> empleados = new ArrayList<Empleado>();
 
@@ -67,7 +64,6 @@ public class Main {
                                 +empleado.getSalario());
                     }
 
->>>>>>> 55314465049984cfb7955ed046f7b39066f8158a
                     break;
                 default:
                     System.out.println("Selecciona una opción valida");
