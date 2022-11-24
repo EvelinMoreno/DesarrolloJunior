@@ -14,7 +14,7 @@ public class Main {
         Alojamiento objetoAlojamiento = new Alojamiento();
         Transporte objetoTransporte = new Transporte();
         Vuelos objetoVuelos = new Vuelos();
-        Empleado objetoEmpleado = new Empleado();
+
 
         ArrayList<Empleado> empleados = new ArrayList<Empleado>();
 
@@ -23,9 +23,9 @@ public class Main {
         System.out.println("0. Salir del menu");
         System.out.println("1. Alimentacion");
         System.out.println("2. Alojamiento");
-        System.out.println("3. Transporte");
-        System.out.println("4. Vuelos");
-        System.out.println("5. Empleado");
+        System.out.println("3. Empleado");
+        System.out.println("4. Trasporte");
+        System.out.println("5. Vuelos");
         System.out.println("6. Mostrar Empleados");
 
         do {
@@ -56,30 +56,50 @@ public class Main {
 
                     break;
                 case 3:
+                    Empleado objetoEmpleado = new Empleado();
+
                     System.out.println("Ingrese identificacion");
+                    objetoEmpleado.setId(read.next());
                     System.out.println("Ingrese nombre del empleado");
+                    objetoEmpleado.setNombre(read.next());
                     System.out.println("Ingrese el apellido del empleado");
+                    objetoEmpleado.setApellido(read.next());
                     System.out.println("Ingrese la edad del empleado");
-                    System.out.println("Ingrese el cargo del empleadò");
+                    objetoEmpleado.setEdad(read.nextInt());
+                    System.out.println("Ingrese el cargo del empleadò (senior o junior)");
+                    objetoEmpleado.setCargo(read.next());
                     System.out.println("Ingrese el salario del empleado");
+                    objetoEmpleado.setSalario(read.nextDouble());
+
+                    empleados.add(objetoEmpleado);
                     break;
                 case 4:
                     System.out.println("Ingrese el tipo de transporte");
+                    objetoTransporte.setTipoTransporte(read.next());
                     System.out.println("Ingrese la fecha de inicio del transporte");
+                    objetoTransporte.setFechaInicioTrasporte(read.next());
                     System.out.println("Ingrese la fecha final del transporte");
+                    objetoTransporte.setFechaFinDeTrasporte(read.next());
                     System.out.println("Ingrese el costo del transporte");
+                    objetoTransporte.setCostoTrasporte(read.nextInt());
                     break;
                 case 5:
                     System.out.println("Ingrese el tipo de vuelo");
+                    objetoVuelos.setTipoVuelo(read.next());
                     System.out.println("Ingrese el origen del vuelo");
+                    objetoVuelos.setOrigen(read.next());
                     System.out.println("Ingrese el destino del vuelo");
+                    objetoVuelos.setDestino(read.next());
                     System.out.println("Ingrese la fecha de salida del vuelo");
-                    System.out.println("Ingrese la fecha de llegada del vuelo");
+                    objetoVuelos.setFechaVuelo(read.next());
                     System.out.println("Ingrese el valor del vuelo");
+                    objetoVuelos.setValorVuelo(read.nextInt());
                     break;
                 case 6:
-                    System.out.println("");
-                    System.out.println("");
+                 for (Empleado empleado:empleados){
+                     System.out.println(empleado.getNombre());
+
+                 }
                     break;
                 default:
                     System.out.println("Selecciona una opción valida");
