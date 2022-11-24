@@ -1,5 +1,7 @@
 package org.example.controladores;
 
+import java.util.Scanner;
+
 public class Vuelos {
 
     private String tipoVuelo;
@@ -64,5 +66,21 @@ public class Vuelos {
 
     public void setOrigen(String origen) {
         this.origen = origen;
+    }
+
+    public void agregarVuelo(){
+        Scanner read= new Scanner(System.in);
+        System.out.println("Ingrese el tipo de vuelo: ");
+        this.setTipoVuelo(read.next());
+        System.out.println("Ingrese el origen del vuelo: ");
+        this.setOrigen(read.next());
+        System.out.println("Ingrese el destino del vuelo: ");
+        this.setDestino(read.next());
+        System.out.println("Ingrese la fecha de salida del vuelo: ");
+        this.setFechaDeSalida(read.next());
+        System.out.println("Ingrese la fecha de llegada del vuelo: ");
+        this.setFechaDeLlegada(read.next());
+        System.out.println("Ingrese el valor del vuelo: ");
+        this.setValorVuelo(read.nextDouble());
     }
 }

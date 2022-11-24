@@ -1,5 +1,7 @@
 package org.example.controladores;
 
+import java.util.Scanner;
+
 public class Transporte {
 
     private String tipoTransporte;
@@ -44,5 +46,17 @@ public class Transporte {
 
     public void setFechaFinDeTrasporte(String fechaFinDeTrasporte) {
         this.fechaFinDeTrasporte = fechaFinDeTrasporte;
+    }
+
+    public void agregarTransporte(){
+        Scanner read= new Scanner(System.in);
+        System.out.println("Ingrese el tipo de transporte: ");
+        this.setTipoTransporte(read.next());
+        System.out.println("Ingrese la fecha de inicio del transporte: ");
+        this.setFechaInicioTrasporte(read.next());
+        System.out.println("Ingrese la fecha final del transporte: ");
+        this.setFechaFinDeTrasporte(read.next());
+        System.out.println("Ingrese el costo del transporte: ");
+        this.setCostoTrasporte(read.nextDouble());
     }
 }
