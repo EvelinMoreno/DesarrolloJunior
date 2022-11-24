@@ -1,5 +1,7 @@
 package org.example.controladores;
 
+import java.util.Scanner;
+
 public class Alojamiento {
 
     private String tipoAlojamiento;
@@ -57,5 +59,21 @@ public class Alojamiento {
 
     public void setFechaFinalAlojamiento(String fechaFinalAlojamiento) {
         this.fechaFinalAlojamiento = fechaFinalAlojamiento;
+    }
+
+    public void agregarAlojamiento(){
+        Scanner read=new Scanner (System.in);
+        System.out.println("Ingrese el tipo de alojamiento: ");
+        this.setTipoAlojamiento(read.next());
+        System.out.println("Ingrese fecha de inicio de alojamiento: ");
+        this.setFechaInicioAlojamiento(read.next());
+        System.out.println("Ingrese fecha de salida de alojamiento: ");
+        this.setFechaFinalAlojamiento(read.next());
+        System.out.println("Ingrese numero de noches de alojamiento:");
+        this.setNochesAlojamiento(read.nextInt());
+        System.out.println("Ingrese el valor del alojamiento: ");
+        this.setValorAlojamiento(read.nextDouble());
+
+
     }
 }

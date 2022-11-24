@@ -1,5 +1,7 @@
 package org.example.controladores;
 
+import java.util.Scanner;
+
 public class Empleado {
 
     private String id;
@@ -78,5 +80,20 @@ public class Empleado {
             this.salario = salario;
         }
 
+    }
+    public void agregarEmpleado(){
+        Scanner read=new Scanner(System.in);
+        System.out.println("Ingrese identificacion: ");
+        this.setId(read.next());
+        System.out.println("Ingrese nombre del empleado: ");
+        this.setNombre(read.next());
+        System.out.println("Ingrese el apellido del empleado: ");
+        this.setApellido(read.next());
+        System.out.println("Ingrese la edad del empleado: ");
+        this.setEdad(read.nextInt());
+        System.out.println("Ingrese el cargo del empleadò: ");
+        this.setCargo(read.next());
+        System.out.println("Ingrese el salario del empleado: ");
+        this.setSalario(read.nextDouble());
     }
 }
