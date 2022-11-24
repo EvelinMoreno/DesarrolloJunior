@@ -21,47 +21,34 @@ public class Main {
         int seleccion = 0;
 
         System.out.println("0. Salir del menu");
-        System.out.println("1. Alimentacion");
-        System.out.println("2. Alojamiento");
-        System.out.println("3. Empleado");
-        System.out.println("4. Trasporte");
-        System.out.println("5. Vuelos");
-        System.out.println("6. Mostrar Empleados");
+        System.out.println("1. Empleado");
+        System.out.println("2. Mostrar Empleados");
 
         do {
             System.out.println(" Ingrese opción del menu: ");
             seleccion = read.nextInt();
 
             switch(seleccion){
+                case 0:
+                    System.out.println("Has salido del sistema");
+                    break;
                 case 1:
-                    objetoAlimentacion.agregarComidas();
-
-                case 2:
-
-                    objetoAlojamiento.agregarAlojamiento();
-
-                    break;
-                case 3:
-
-                    objetoTransporte.agregarTransporte();
-
-                    break;
-                case 4:
-
-                    objetoVuelos.agregarVuelo();
-
-                    break;
-                case 5:
 
                     Empleado objetoEmpleado = new Empleado();
                     objetoEmpleado.agregarEmpleado();
                     empleados.add(objetoEmpleado);
                     break;
-                case 6:
+                case 2:
 
                     for (Empleado empleado:empleados) {
-                        System.out.println(empleado.getNombre()+empleado.getApellido()+empleado.getCargo()
-                                +empleado.getSalario());
+                        System.out.println("*******************************");
+                        System.out.println("Nombre Empleado: "+ empleado.getNombre()+" "+empleado.getApellido());
+                        System.out.println("Cargo: "+empleado.getCargo());
+                        System.out.println("Salario: "+empleado.getSalario());
+                        System.out.println("Bono de Viaticos: "+empleado.bonoViejes());
+                        System.out.println("Tipo de Vuelo: "+empleado.getTipoVuelo());
+                        System.out.println("Gastos totales: "+empleado.calcularCostosTotales());
+                        System.out.println("*******************************");
                     }
 
                     break;

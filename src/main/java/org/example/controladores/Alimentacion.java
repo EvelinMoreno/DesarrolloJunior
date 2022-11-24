@@ -2,7 +2,7 @@ package org.example.controladores;
 
 import java.util.Scanner;
 
-public class Alimentacion {
+public class Alimentacion extends Alojamiento{
 
     private String fechaDeComida;
     private int cantidadComidas;
@@ -48,6 +48,7 @@ public class Alimentacion {
     }
     public void agregarComidas(){
         Scanner read= new Scanner(System.in);
+        System.out.println("*****DATOS DE ALIMENTACION*****");
         System.out.println("Ingrese la fecha de comida: ");
         this.setFechaDeComida(read.next());
         System.out.println("Ingrese la cantidad de comidas: ");

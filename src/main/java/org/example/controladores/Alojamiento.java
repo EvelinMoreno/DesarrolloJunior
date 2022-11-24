@@ -2,7 +2,7 @@ package org.example.controladores;
 
 import java.util.Scanner;
 
-public class Alojamiento {
+public class Alojamiento extends Transporte{
 
     private String tipoAlojamiento;
     private double valorAlojamiento;
@@ -14,6 +14,7 @@ public class Alojamiento {
     }
 
     public String getTipoAlojamiento() {
+
         return tipoAlojamiento;
     }
 
@@ -21,7 +22,7 @@ public class Alojamiento {
         this.tipoAlojamiento = tipoAlojamiento;
     }
 
-    public double isValorAlojamiento() {
+    public double getValorAlojamiento() {
         return valorAlojamiento;
     }
 
@@ -63,6 +64,7 @@ public class Alojamiento {
 
     public void agregarAlojamiento(){
         Scanner read=new Scanner (System.in);
+        System.out.println("*****DATOS DE ALOJAMINTO*****");
         System.out.println("Ingrese el tipo de alojamiento: ");
         this.setTipoAlojamiento(read.next());
         System.out.println("Ingrese fecha de inicio de alojamiento: ");

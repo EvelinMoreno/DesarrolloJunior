@@ -50,6 +50,7 @@ public class Transporte {
 
     public void agregarTransporte(){
         Scanner read= new Scanner(System.in);
+        System.out.println("*****DATOS DEL TRASPORTE*****");
         System.out.println("Ingrese el tipo de transporte: ");
         this.setTipoTransporte(read.next());
         System.out.println("Ingrese la fecha de inicio del transporte: ");

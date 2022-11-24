@@ -2,7 +2,7 @@ package org.example.controladores;
 
 import java.util.Scanner;
 
-public class Vuelos {
+public class Vuelos extends Alimentacion{
 
     private String tipoVuelo;
 
@@ -21,6 +21,7 @@ public class Vuelos {
     }
 
     public void setTipoVuelo(String tipoVuelo) {
+
         this.tipoVuelo = tipoVuelo;
     }
 
@@ -70,6 +71,7 @@ public class Vuelos {
 
     public void agregarVuelo(){
         Scanner read= new Scanner(System.in);
+        System.out.println("*****DATOS DEL VUELO*****");
         System.out.println("Ingrese el tipo de vuelo: ");
         this.setTipoVuelo(read.next());
         System.out.println("Ingrese el origen del vuelo: ");
