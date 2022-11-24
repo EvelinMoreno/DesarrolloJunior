@@ -97,7 +97,7 @@ public class Main {
                     break;
                 case 6:
                     for (Empleado empleado:empleados){
-                        System.out.println(empleado.getNombre());
+                        System.out.println(empleado.getNombre() +"  "+ empleado.getApellido());
 
                     }
                     break;
