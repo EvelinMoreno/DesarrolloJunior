@@ -1,8 +1,10 @@
 package org.example.controladores;
 
+import org.example.interfaces.Metodos;
+
 import java.util.Scanner;
 
-public class Alojamiento extends Transporte{
+public class Alojamiento extends Empleado {
 
     private String tipoAlojamiento;
     private double valorAlojamiento;

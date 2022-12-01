@@ -1,8 +1,10 @@
 package org.example.controladores;
 
+import org.example.interfaces.Metodos;
+
 import java.util.Scanner;
 
-public class Alimentacion extends Alojamiento{
+public class Alimentacion extends Empleado {
 
     private String fechaDeComida;
     private int cantidadComidas;
