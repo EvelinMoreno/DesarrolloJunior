@@ -68,7 +68,7 @@ public class Main {
                     seleccionSubmenu=read.nextInt();
                     //Menu para agregar viatico por tipo,
                     /* Arraylist del tipo de viatico, seleccionar */
-                    while(seleccionSubmenu!=5){
+                    while(seleccionSubmenu!=6){
 
                         switch (seleccionSubmenu){
                             case 1:
@@ -96,7 +96,10 @@ public class Main {
                                 vuelos.add(vuelo);
                                 break;
 
-                            case 5:
+                            case 5: // mostrar los viaticos del empleado aqui con un for each general
+                                // y 4 for each que recorran busqueda de cada viatico
+
+                            case 6:
                                 break;
 
                             default:
