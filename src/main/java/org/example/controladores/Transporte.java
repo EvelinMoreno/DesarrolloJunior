@@ -1,8 +1,10 @@
 package org.example.controladores;
 
+import org.example.interfaces.Metodos;
+
 import java.util.Scanner;
 
-public class Transporte {
+public class Transporte extends Empleado {
 
     private String tipoTransporte;
     private double costoTrasporte;

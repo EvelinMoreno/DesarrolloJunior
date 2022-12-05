@@ -2,7 +2,7 @@ package org.example.controladores;
 
 import java.util.Scanner;
 
-public class Vuelos extends Alimentacion{
+public class Vuelo extends Empleado {
 
     private String tipoVuelo;
 
@@ -13,7 +13,7 @@ public class Vuelos extends Alimentacion{
     private String destino;
     private String origen;
 
-    public Vuelos() {
+    public Vuelo() {
     }
 
     public String getTipoVuelo() {
