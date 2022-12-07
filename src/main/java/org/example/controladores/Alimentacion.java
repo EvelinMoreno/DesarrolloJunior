@@ -4,8 +4,9 @@ import org.example.interfaces.Metodos;
 
 import java.util.Scanner;
 
-public class Alimentacion extends Empleado {
+public class Alimentacion{
 
+    private String idEmpleado;
     private String fechaDeComida;
     private int cantidadComidas;
     private double valorComidas;
@@ -48,6 +49,15 @@ public class Alimentacion extends Empleado {
             this.valorComidas = valorComidas;
         }
     }
+
+    public String getIdEmpleado() {
+        return idEmpleado;
+    }
+
+    public void setIdEmpleado(String idEmpleado) {
+        this.idEmpleado = idEmpleado;
+    }
+
     public void agregarComidas(){
         Scanner read= new Scanner(System.in);
         System.out.println("*****DATOS DE ALIMENTACION*****");

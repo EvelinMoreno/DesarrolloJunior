@@ -4,8 +4,9 @@ import org.example.interfaces.Metodos;
 
 import java.util.Scanner;
 
-public class Alojamiento extends Empleado {
+public class Alojamiento {
 
+    private String idEmpleado;
     private String tipoAlojamiento;
     private double valorAlojamiento;
     private int nochesAlojamiento;
@@ -62,6 +63,18 @@ public class Alojamiento extends Empleado {
 
     public void setFechaFinalAlojamiento(String fechaFinalAlojamiento) {
         this.fechaFinalAlojamiento = fechaFinalAlojamiento;
+    }
+
+    public String getIdEmpleado() {
+        return idEmpleado;
+    }
+
+    public void setIdEmpleado(String idEmpleado) {
+        this.idEmpleado = idEmpleado;
+    }
+
+    public String getFechaFinalAlojamiento() {
+        return fechaFinalAlojamiento;
     }
 
     public void agregarAlojamiento(){

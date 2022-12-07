@@ -10,14 +10,28 @@ public class Main {
 
         Scanner read = new Scanner(System.in);
 
-
-
-
         ArrayList<Empleado> empleados = new ArrayList<Empleado>();
         ArrayList<Alimentacion> alimentaciones = new ArrayList<Alimentacion>();
         ArrayList<Alojamiento> alojamientos = new ArrayList<Alojamiento>();
         ArrayList<Transporte> transportes = new ArrayList<Transporte>();
         ArrayList<Vuelo> vuelos = new ArrayList<Vuelo>();
+
+            /*public Empleado(String id, String nombre, String apellido, int edad, String cargo, double salario) {
+            this.id = id;
+            this.nombre = nombre;
+            this.apellido = apellido;
+            this.edad = edad;
+            this.cargo = cargo;
+            this.salario = salario;
+        }
+        */
+        Empleado e1=new Empleado("1", "santiago","misas",28,"senior", 3000000 );
+
+        Empleado e2=new Empleado("2", "jose","sosa",24,"junior", 3500000 );
+
+        empleados.add(e1);
+        empleados.add(e2);
+
 
         int seleccion = 0;
         int seleccionSubmenu=0;
@@ -37,26 +51,13 @@ public class Main {
                     break;
                 case 1:
 
-                    Empleado empleado = new Empleado();
-                    empleado.agregarEmpleado();
-                    empleados.add(empleado);
-
-
-
-
-
+                    Empleado trabajador = new Empleado();
+                    trabajador.agregarEmpleado();
+                    empleados.add(trabajador);
 
 
                     break;
                 case 2:
-                    for (Empleado empleado:empleados) {
-
-                        System.out.println("*******************************");
-                        System.out.println("Nombre Empleado: "+ empleado.getNombre()+" "+empleado.getApellido());
-                        System.out.println("Cargo: "+empleado.getCargo());
-                        System.out.println("Salario: "+empleado.getSalario());
-                        System.out.println("*******************************");
-                    }
                     System.out.println("Ingrese la cedula del empleado que quieres añadirle el viatico");
                     String idempleado=read.next();
 
@@ -113,15 +114,15 @@ public class Main {
                     break;
 
                 case 3:
-                    for (Empleado empleado:empleados) {
+                    for (Empleado trabajador2:empleados) {
 
                         System.out.println("*******************************");
-                        System.out.println("Nombre Empleado: "+ empleado.getNombre()+" "+empleado.getApellido());
-                        System.out.println("Cargo: "+empleado.getCargo());
-                        System.out.println("Salario: "+empleado.getSalario());
-                        System.out.println("Bono de Viaticos: "+empleado.bonoViajes());
-                        System.out.println("Tipo de Vuelo: "+vuelo.getTipoVuelo());
-                        System.out.println("Gastos totales: "+empleado.calcularCostosTotales());
+                        System.out.println("Nombre Empleado: "+ trabajador2.getNombre()+" "+trabajador2.getApellido());
+                        System.out.println("Cargo: "+trabajador2.getCargo());
+                        System.out.println("Salario: "+trabajador2.getSalario());
+                        //System.out.println("Bono de Viaticos: "+empleado.bonoViajes());
+                        //System.out.println("Tipo de Vuelo: "+vuelo.getTipoVuelo());
+                        //System.out.println("Gastos totales: "+empleado.calcularCostosTotales());
                         System.out.println("*******************************");
                     }
 
