@@ -1,10 +1,6 @@
 package org.example.controladores;
 
-import org.example.interfaces.Metodos;
-
 import java.util.Scanner;
-
-
 
 public class Empleado {
 
@@ -14,7 +10,6 @@ public class Empleado {
     private int edad;
     private String cargo;
     private double salario;
-
 
     public Empleado() {
     }
@@ -56,16 +51,8 @@ public class Empleado {
         return edad;
     }
 
-    public void setEdad(int edad) { if (edad<18){
-        System.out.println("Ingrese una edad valida");
-    }
-    else if (edad>110) {
-        System.out.println("Edad invalida");
-    }
-        else {
+    public void setEdad(int edad) {
         this.edad = edad;
-    }
-
     }
 
     public String getCargo() {
@@ -73,14 +60,7 @@ public class Empleado {
     }
 
     public void setCargo(String cargo) {
-        if (cargo.equals("senior")) {
-            this.cargo = cargo;
-        } else if (cargo.equals("junior")) {
-            this.cargo = cargo;
-        }else {
-            System.out.println("Cargo invalido");
-        }
-
+        this.cargo = cargo;
     }
 
     public double getSalario() {
@@ -88,18 +68,12 @@ public class Empleado {
     }
 
     public void setSalario(double salario) {
-        if (salario < 0 ) {
-            System.out.println("Ingresa una cantidad de salario valida");
-        }else{
-            this.salario = salario;
-        }
-
+        this.salario = salario;
     }
 
-
     public void agregarEmpleado(){
-        Scanner read=new Scanner(System.in);
 
+        Scanner read=new Scanner(System.in);
         System.out.println("****AGREGANDO EMPLEADO*****");
         System.out.println("Ingrese identificacion: ");
         this.setId(read.next());
@@ -114,29 +88,17 @@ public class Empleado {
         System.out.println("Ingrese el salario del empleado: ");
         this.setSalario(read.nextDouble());
     }
-    /*
-    public double bonoViajes(){
-        double bonoViaje=0;
-        if (this.cargo.equals("junior") && vuelo.getTipoVuelo().equals("nacional")){
-             bonoViaje = this.salario*0.20;
-        }else if (this.cargo.equals("junior") && vuelo.getTipoVuelo().equals("internacional")){
-             bonoViaje = this.salario*0.40;
-        }else if (this.cargo.equals("senior") && vuelo.getTipoVuelo().equals("nacional")){
-            bonoViaje = this.salario*0.30;
-        }else if (this.cargo.equals("senior") && vuelo.getTipoVuelo().equals("internacional")){
-            bonoViaje = this.salario*0.50;
-        }else{
-            System.out.println("Error de digitacion de cargo o tipo de vuelo");
-        }
-        return bonoViaje;
+
+    @Override
+    public String toString() {
+        return "Empleado{" +
+                "id='" + id + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", apellido='" + apellido + '\'' +
+                ", edad=" + edad +
+                ", cargo='" + cargo + '\'' +
+                ", salario=" + salario +
+                '}';
     }
-
-    public double calcularCostosTotales(){
-        double costos=vuelo.getValorVuelo()+alimentacion.getValorComidas()+alojamiento.getValorAlojamiento()
-                +transporte.getCostoTrasporte();
-        return costos;
-    }
-     */
-
-
 }
+

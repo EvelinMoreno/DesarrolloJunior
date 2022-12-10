@@ -2,8 +2,9 @@ package org.example.controladores;
 
 import java.util.Scanner;
 
-public class Vuelo extends Empleado {
+public class Vuelo {
 
+    private String idEmpleado;
     private String tipoVuelo;
 
     private String fechaDeSalida;
@@ -67,6 +68,14 @@ public class Vuelo extends Empleado {
 
     public void setOrigen(String origen) {
         this.origen = origen;
+    }
+
+    public String getIdEmpleado() {
+        return idEmpleado;
+    }
+
+    public void setIdEmpleado(String idEmpleado) {
+        this.idEmpleado = idEmpleado;
     }
 
     public void agregarVuelo(){
