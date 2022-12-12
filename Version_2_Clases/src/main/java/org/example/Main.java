@@ -15,7 +15,7 @@ public class Main {
 
         Empleado e1=new Empleado("1", "santiago","misas",28,"senior", 3000000 );
 
-        Empleado e2=new Empleado("2", "jose","sosa",24,"junior", 3500000 );
+        Empleado e2=new Empleado("2", "santiago","gaviria",24,"junior", 3500000 );
         empleados.add(e1);
         empleados.add(e2);
 
