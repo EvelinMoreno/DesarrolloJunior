@@ -8,6 +8,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        //Refactorizacion a dos clases
+        //Se tomo referencia del modulo principal para creacion del submodulo y se actualiza trello
         Scanner read = new Scanner(System.in);
 
         ArrayList<Empleado> empleados = new ArrayList<Empleado>();
